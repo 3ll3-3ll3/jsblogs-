@@ -50,6 +50,25 @@
 
 ### (1) Does \( G \) have a subgroup of order 5? If so, is it a normal subgroup?
 
+Let the conjugacy classes be denoted as \( G(x_1), G(x_2), G(x_3), G(x_4), G(x_5) \), with orders \( 1, 4, 5, 5, 5 \), respectively. By the Orbit-Stabilizer Theorem, the order of the centralizer \( C_G(x_2) \) is \( |G| / |G(x_2)| \). Thus, \( C_G(x_2) \) is a subgroup of \( G \) of order 5. We claim that \( G \) has only one subgroup of order 5.  
+
+Suppose not:  
+Let \( \langle r \rangle \) and \( \langle s \rangle \) be two distinct subgroups of \( G \) of order 5. Then \( \langle r \rangle \cap \langle s \rangle = \{ e \} \) (otherwise, they would be the same). This implies that \( r^i s^j = r^m s^n \Leftrightarrow r^{i-m} = s^{n-j} \equiv e \Leftrightarrow m = n, i = j \) (where \( 0 \leq i, j, m, n \leq 5 \)). Therefore, \( |G| \geq |\{ r^i s^j \mid 0 \leq i, j \leq 5 \}| = 25 \), which is a contradiction!
+
+### (2) Does \( G \) have a subgroup of order 4? If so, is it a normal subgroup?
+
+Similarly, \( C_G(x_i) \) for \( i = 3, 4, 5 \) are the desired subgroups. We claim that none of them are normal subgroups.  
+
+Suppose not:  
+Without loss of generality, assume \( C_G(x_3) \triangleleft G \). Then, for all \( g \in G \), \( g C_G(x_3) g^{-1} = C_G(x_3) \). For all \( a \in C_G(x_3) \), \( a x_3 = x_3 a \), and \( g a g^{-1} x_3 = x_3 g a g^{-1} \). This implies \( a g^{-1} x_3 g = g^{-1} x_3 g a \), i.e., \( a \in C_G(g^{-1} x_3 g) \). Thus, \( C_G(x_3) \subseteq C_G(g^{-1} x_3 g) \). Similarly, \( C_G(g^{-1} x_3 g) \subseteq C_G(x_3) \). Therefore, \( C_G(g^{-1} x_3 g) = C_G(x_3) \).  
+
+Since the map \( \phi: G \rightarrow G \), \( a \mapsto g a g^{-1} \) is a bijection, there exists \( g_0 \in G \) such that \( x_i = a_i x_3 a_i^{-1} \) for \( i \neq 3 \). This implies \( C_G(x_3) = C_G(x_i) \) for \( i \neq 3 \), which is impossible!
+
+
+## 1.2 The Class Equation of Group \( G \) is \( 1 + 4 + 5 + 5 + 5 \)
+
+### (1) Does \( G \) have a subgroup of order 5? If so, is it a normal subgroup?
+
 Let the conjugacy classes be denoted by $G(x_1), G(x_2), G(x_3), G(x_4), G(x_5)$ with orders \$1, 4, 5, 5, 5$ respectively. By the Orbit-Stabilizer Theorem, the order of the centralizer $C_G(x_2)$ is $|G|/|G(x_2)|$. Therefore, $C_G(x_2)$ is a subgroup of $G$ with order 5. We claim that $G$ has only one subgroup of order 5. Suppose, for contradiction, that there are two distinct subgroups of order 5, say $<r>$ and $<s>$. Then $<r>\cap <s> = \{e\}$ (otherwise they would be the same). Thus, $r^is^j=r^ms^n \Leftrightarrow r^{i-m}=s^{n-j} \equiv e \Leftrightarrow m=n,i=j$ (where we assume \$0\le i,j, m,n\le 4$). Therefore, $|G|\ge |\{r^is^j|0\le i,j\le 4\}|=25$, which is a contradiction!
 
 Therefore, $G$ has a unique subgroup of order 5, and thus it must be a normal subgroup.
