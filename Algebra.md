@@ -31,5 +31,5 @@
    **第 1 列**：可以是 \( \mathbb{F}_p^n \) 中任意非零向量，共 \( p^n - 1 \) 种选择。
   **第 2 列**：不能与第 1 列共线（即不在其张成的 1 维子空间中），共 \( p^n - p \) 种选择。
  **第 3 列**：不能在前两列张成的 2 维子空间中，共 \( p^n - p^2 \) 种选择。  依此类推，直到第 \( n \) 列。
-> <div style="text-align: right;font-size: 20px;">▢</div>
+<div style="text-align: right;font-size: 20px;">▢</div>
 
