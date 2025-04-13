@@ -46,4 +46,19 @@
 
 
 
+## 1.2 The Class Equation of Group \( G \) is \( 1 + 4 + 5 + 5 + 5 \)
+
+### (1) Does \( G \) have a subgroup of order 5? If so, is it a normal subgroup?
+
+Let the conjugacy classes be denoted by $G(x_1), G(x_2), G(x_3), G(x_4), G(x_5)$ with orders \$1, 4, 5, 5, 5$ respectively. By the Orbit-Stabilizer Theorem, the order of the centralizer $C_G(x_2)$ is $|G|/|G(x_2)|$. Therefore, $C_G(x_2)$ is a subgroup of $G$ with order 5. We claim that $G$ has only one subgroup of order 5. Suppose, for contradiction, that there are two distinct subgroups of order 5, say $<r>$ and $<s>$. Then $<r>\cap <s> = \{e\}$ (otherwise they would be the same). Thus, $r^is^j=r^ms^n \Leftrightarrow r^{i-m}=s^{n-j} \equiv e \Leftrightarrow m=n,i=j$ (where we assume \$0\le i,j, m,n\le 4$). Therefore, $|G|\ge |\{r^is^j|0\le i,j\le 4\}|=25$, which is a contradiction!
+
+Therefore, $G$ has a unique subgroup of order 5, and thus it must be a normal subgroup.
+
+### (2) Does \( G \) have a subgroup of order 4? If so, is it a normal subgroup?
+
+As above, $C_{G}(x_i)$ for $i=3,4,5$ are subgroups of order $|G|/5 = 6/5$, which is not an integer.  This is incorrect.  The order of G is 20.  Therefore, $C_G(x_i)$ for $i=3,4,5$ are subgroups of order $|G|/5 = 20/5 = 4$. We claim that none of these three subgroups are normal. Suppose, for contradiction, that $C_G(x_3) \triangleleft G$. Then, $\forall g\in G, gC_G(x_3) g^{-1} = C_G(x_3)$. Thus, $\forall a\in C_G(x_3), ax_3=x_3a$.  Then $gag^{-1}x_3=x_3gag^{-1}$, and $ag^{-1}x_3g= g^{-1}x_3ga$, i.e., $a\in C_G(g^{-1}x_3g)$. Therefore, $C_G(x_3) \subseteq C_G(g^{-1}x_3g)$. Similarly, $C_G(g^{-1}x_3g) \subseteq C_G(x_3)$. Thus, $C_G(g^{-1}x_3g) = C_G(x_3)$.
+
+Since $\phi :G\rightarrow G, a \mapsto gag^{-1}$ is a bijection, there exists $g_0\in G$ such that $x_i=g_0 x_3g_0^{-1}$ for $i \ne 3$. Thus, $C_G(x_3)=C_G(x_i)$ for $i\ne 3$, which is impossible because the centralizers are different.  Therefore, none of the subgroups of order 4 are normal.
+
+
 
