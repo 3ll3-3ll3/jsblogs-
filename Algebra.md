@@ -1,4 +1,3 @@
-<link rel="stylesheet" type="text/css" href="http://zlyd.iccnconn.com/markdowncss/stylelib/typora-purple-theme-1.5.7/purple.css">
 
 # 作业5
 徐海博别学了，
