@@ -1,6 +1,7 @@
 [TOC]
 
 # CH0 Miscellaneous Problems & Minor Conclusions
+# CH0 Miscellaneous Problems & Minor Conclusions
 ## 0.1 4234423
 
 # CH1 Holomophic Function
