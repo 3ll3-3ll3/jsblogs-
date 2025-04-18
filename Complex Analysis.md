@@ -59,13 +59,9 @@ Here, \( f\left( \frac{1}{n} \right) \) is real, so its conjugate equals itself.
 $$  h(0) = \lim_{n \to \infty} h\left( \frac{1}{n} \right) = 0  $$
 
 Thus, \( h(z) \) vanishes on the set \(\left\{ \frac{1}{n} \right\} \cup \left\{ 0 \right\}\), which has an accumulation point at 0. By the **identity theorem for analytic functions**, \( h(z) \equiv 0 \) holds on the entire complex plane. That is:
-
 \[ f(z) = \overline{f(z)}, \quad \forall z \in \mathbb{C} \]
-
 In particular, for any real number \( x \), \( \overline{x} = x \), so:
-
 \[ f(x) = \overline{f(x)} \]
-
 This implies that \( f \) takes real values on the real axis.
 
 
