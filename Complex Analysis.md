@@ -1,10 +1,10 @@
 [TOC]
 
 # <p style="color:green">Complex Analysis</p>
-# CH0 Miscellaneous Problems & Minor Conclusions
+# <p style="color:green">CH0 Miscellaneous Problems & Minor Conclusions</p>
 ## 0.1 4234423
 
-# CH1 Holomorphic Function
+# <p style="color:green">CH1 Holomorphic Function</p>
 ## 1.1 A function $u(x, y)$ is harmonic on the complex plane $\mathbb{C}$, and $u(x, y) \geq a$, where $a$ is a constant. Prove that $u(x, y)$ is constant.
 **Proof:**  
 Since $u(x, y)$ is harmonic on $\mathbb{C}$, there exists a holomorphic function $f(z)$ such that  
@@ -30,16 +30,16 @@ This implies that $f(z)$ is constant, and therefore $u(x, y) = \Re f(z)$ is also
 
 ## 1.2 Let $D$ be the interior of a circle $C$, and let $f(z)$ be a function that is: (i) Analytic in the domain $D$ (ii) Continuous on the closure $\overline{D} = D \cup C$. If $|f(z)|$ is constant on $C$, prove that either: 1. $f(z)$ is constant, or 2. $f(z)$ has at least one zero in $D$.
 **Proof:**  
-Assume \( f(z) \) has no zeros in \( D \). Then \( g(z) = 1/f(z) \) is analytic in \( D \) and continuous on \( \overline{D} \). On \( C \), $|f(z)| = M$, so $|g(z)| = 1/M$. By the **Maximum Modulus Principle**, $|f(z)| \leq M$and $|g(z)| \leq 1/M$in $D$, implying $|f(z)| \geq M$. Thus, $|f(z)| \equiv M$, forcing $f(z)$ to be constant (obtained through the **C-R equations**). 
+Assume \( f(z) \) has no zeros in \( D \). Then \( g(z) = 1/f(z) \) is analytic in \( D \) and continuous on $\overline{D}$. On $C$, $|f(z)|=M$, so $|g(z)|=1/M$. By the **Maximum Modulus Principle**, $|f(z)| \leq M$ and $|g(z)| \leq 1/M$ in $D$, implying $|f(z)| \geq M$. Thus, $|f(z)| \equiv M$, forcing $f(z)$ to be constant (obtained through the **C-R equations**). 
  <div style="text-align: right;font-size: 20px;">▢</div>
 
 ## 1.3 Let $f(z)$ and $g(z)$ be analytic functions on a domain $D$. If $|f(z)| = |g(z)|$ holds for all $z$ in $D$, then there exists a constant $c \in \mathbb{C}$ with $|c|=1$ such that $f(z) = c \cdot g(z)$ in $D$.
 **Proof:**  
-If $g(z) \equiv 0$ in $D$, then $|f(z)|=|g(z)|=0$implies $f(z) \equiv 0$ in $D$, and the result holds trivially with any constant $c \in \mathbb{C}$ satisfying $|c|=1$.  
+If $g(z) \equiv 0$ in $D$, then $|f(z)|=|g(z)|=0$ implies $f(z) \equiv 0$ in $D$, and the result holds trivially with any constant $c \in \mathbb{C}$ satisfying $|c|=1$.  
 
 Suppose $g(z) \not\equiv 0$ in $D$. Define $h(z) = \frac{f(z)}{g(z)}$ on $D \setminus \{ z : g(z) = 0 \}$. Since $|f(z)|=|g(z)|$ for all $z \in D$, we have $|h(z)|=1$ wherever $h(z)$ is defined.  
 
-Let $z_0 \in D$ be a zero of $g(z)$ of order $m$. Then $|f(z_0)|=|g(z_0)|=0$implies $z_0$ is also a zero of $f(z)$ of the same order $m$. Near $z_0$, we can write  
+Let $z_0 \in D$ be a zero of $g(z)$ of order $m$. Then $|f(z_0)|=|g(z_0)|=0$ implies $z_0$ is also a zero of $f(z)$ of the same order $m$. Near $z_0$, we can write  
 $$
 f(z) = (z - z_0)^m \tilde{f}(z), \quad g(z) = (z - z_0)^m \tilde{g}(z)
 $$where $\tilde{f}(z)$ and $\tilde{g}(z)$ are analytic and non-vanishing at $z_0$. Thus,  
@@ -65,7 +65,7 @@ $$
 h(0) = \lim_{n \to \infty} h\left( \frac{1}{n} \right) = 0
 $$
 
-Thus, $h(z)$ vanishes on the set $\left\{ \frac{1}{n} \right\} \cup \left\{ 0 \right\}$, which has an accumulation point at 0. By the **identity theorem for analytic functions**, $h(z) \equiv 0$ holds on the entire complex plane. That is:
+Thus, $h(z)$ vanishes on the set \(\left\{ \frac{1}{n} \right\} \cup \left\{ 0 \right\}\), which has an accumulation point at 0. By the **identity theorem for analytic functions**, $h(z) \equiv 0$ holds on the entire complex plane. That is:
 $$
 f(z) = \overline{f(z)}, \quad \forall z \in \mathbb{C}
 $$
@@ -86,24 +86,15 @@ This implies that $f$ takes real values on the real axis.
 
 
 
-# CH2 Integral Representation of Analytic Functions
+# <p style="color:green">CH2 Integral Representation of Analytic Functions</p>
 
+# <p style="color:green">CH3 Taylor Expansion of Analytic Functions</p>
 
+# <p style="color:green">CH4 Laurent Expansion of Analytic Functions</p>
 
+# <p style="color:green">CH5 Analytic Continuation</p>
 
+# <p style="color:green">CH6 Conformal Mappings</p>
 
-# CH3 Taylor Expansion of Analytic Functions
-
-# CH4 Laurent Expansion of Analytic Functions 
-
-
-
-# CH5 Analytic Continuation
-
-
-# CH6 Conformal Mappings
-
-
-
-# CH7 Harmonic and Subharmonic Functions
+# <p style="color:green">CH7 Harmonic and Subharmonic Functions</p>
 
