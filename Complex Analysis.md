@@ -35,11 +35,11 @@ Assume \( f(z) \) has no zeros in \( D \). Then \( g(z) = 1/f(z) \) is analytic 
 
 ## 1.3 Let $f(z)$ and $g(z)$ be analytic functions on a domain $D$. If $|f(z)| = |g(z)|$ holds for all $z$ in $D$, then there exists a constant $c \in \mathbb{C}$ with $|c|=1$ such that $f(z) = c \cdot g(z)$ in $D$.
 **Proof:**  
-If $g(z) \equiv 0$ in $D$, then $|f(z)|=|g(z)|=0$ implies $f(z) \equiv 0$ in $D$, and the result holds trivially with any constant $c \in \mathbb{C}$ satisfying $|c|=1$.  
+If $g(z) \equiv 0$ in $D$, then $|f(z)|=|g(z)|=0$implies $f(z) \equiv 0$ in $D$, and the result holds trivially with any constant $c \in \mathbb{C}$ satisfying $|c|=1$.  
 
 Suppose $g(z) \not\equiv 0$ in $D$. Define $h(z) = \frac{f(z)}{g(z)}$ on $D \setminus \{ z : g(z) = 0 \}$. Since $|f(z)|=|g(z)|$ for all $z \in D$, we have $|h(z)|=1$ wherever $h(z)$ is defined.  
 
-Let $z_0 \in D$ be a zero of $g(z)$ of order $m$. Then $|f(z_0)|=|g(z_0)|=0$ implies $z_0$ is also a zero of $f(z)$ of the same order $m$. Near $z_0$, we can write  
+Let $z_0 \in D$ be a zero of $g(z)$ of order $m$. Then $|f(z_0)|=|g(z_0)|=0$implies $z_0$ is also a zero of $f(z)$ of the same order $m$. Near $z_0$, we can write  
 $$
 f(z) = (z - z_0)^m \tilde{f}(z), \quad g(z) = (z - z_0)^m \tilde{g}(z)
 $$where $\tilde{f}(z)$ and $\tilde{g}(z)$ are analytic and non-vanishing at $z_0$. Thus,  
