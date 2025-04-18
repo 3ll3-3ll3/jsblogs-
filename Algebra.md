@@ -1,29 +1,3 @@
-# 作业5
-梁彭博别学了，
-梁彭博别学了，
-
-
-
-梁彭博别学了，梁彭博别学了，
-梁彭博别学了，
-梁彭博别学了，
-梁彭博别学了，
-梁彭博别学了，
-梁彭博别学了，
-
-梁彭博别学了，梁彭博别学了，
-
-
-梁彭博别学了，
-梁彭博别学了，
-梁彭博别学了，
-梁彭博别学了，
-梁彭博别学了，
-梁彭博别学了，
-
-<link rel="stylesheet" type="text/css" href="http://zlyd.iccnconn.com/markdowncss/stylelib/typora-purple-theme-1.5.7/purple.css">
-
-# CH1 杂题&小结论
 [TOC]
 # 第零章 杂题和小结论
 ## 其他
