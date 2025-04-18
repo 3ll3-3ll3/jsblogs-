@@ -30,7 +30,7 @@ This implies that $f(z)$ is constant, and therefore $u(x, y) = \Re f(z)$ is also
 
 ## 1.2 Let $D$ be the interior of a circle $C$, and let $f(z)$ be a function that is: (i) Analytic in the domain $D$ (ii) Continuous on the closure $\overline{D} = D \cup C$. If $|f(z)|$ is constant on $C$, prove that either: 1. $f(z)$ is constant, or 2. $f(z)$ has at least one zero in $D$.
 **Proof:**  
-Assume \( f(z) \) has no zeros in \( D \). Then \( g(z) = 1/f(z) \) is analytic in \( D \) and continuous on \( \overline{D} \). On \( C \), $|f(z)| = M$, so $|g(z)| = 1/M$. By the **Maximum Modulus Principle**, $|f(z)| \leq M$ and $|g(z)| \leq 1/M$ in $D$, implying $|f(z)| \geq M$. Thus, $|f(z)| \equiv M$, forcing $f(z)$ to be constant (obtained through the **C-R equations**). 
+Assume \( f(z) \) has no zeros in \( D \). Then \( g(z) = 1/f(z) \) is analytic in \( D \) and continuous on \( \overline{D} \). On \( C \), $|f(z)| = M$, so $|g(z)| = 1/M$. By the **Maximum Modulus Principle**, $|f(z)| \leq M$and $|g(z)| \leq 1/M$in $D$, implying $|f(z)| \geq M$. Thus, $|f(z)| \equiv M$, forcing $f(z)$ to be constant (obtained through the **C-R equations**). 
  <div style="text-align: right;font-size: 20px;">▢</div>
 
 ## 1.3 Let $f(z)$ and $g(z)$ be analytic functions on a domain $D$. If $|f(z)| = |g(z)|$ holds for all $z$ in $D$, then there exists a constant $c \in \mathbb{C}$ with $|c|=1$ such that $f(z) = c \cdot g(z)$ in $D$.
