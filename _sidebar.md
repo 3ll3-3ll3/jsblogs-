@@ -8,3 +8,4 @@
 * 数学笔记
   * [抽象代数基础](Algebra.md)
   * [Complex Analysis](Complex%20Analysis.md)
+  * [（概率论与）数理统计](概统.md)
