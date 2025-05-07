@@ -6,7 +6,7 @@
   * [作业5](md草稿/王家乐作业5)
   * [作业6](md草稿/王家乐作业6)    
 * 抽象代数基础
-  * [第零章 杂题和小结论](ch0)
+  * [第零章 杂题和小结论](Algebra/ch0)
   * 第一章 群
     * [§1 群的典型例子：循环群，二面体群，矩阵群，对称群](Algebra/ch1/sec1.1)  
 * [Complex Analysis](Complex%20Analysis.md)
