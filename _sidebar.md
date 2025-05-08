@@ -7,11 +7,16 @@
   * [作业6](md草稿/王家乐作业6)    
 * 抽象代数基础
   * [第零章 杂题和小结论](Algebra/ch0/ch0.md)
-  * [第一章 群](Algebra/chapter1)
-  * [第二章 环](Algebra/chapter2)
-  * [第三章 域](Algebra/chapter3)
+  * [第一章 群](Algebra/ch1/chapter1.md)
+  * [第二章 环](Algebra/ch2/chapter2.md)
+  * [第三章 域](Algebra/ch3/chapter3.md)
 * [Complex Analysis](Complex%20Analysis.md)
 * [（概率论与）数理统计](概统.md)
+
+
+
+
+
 
 
 
