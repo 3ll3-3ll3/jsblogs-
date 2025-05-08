@@ -12,10 +12,7 @@
   * [第三章 域](Algebra/ch3/chapter3.md)
 * [Complex Analysis](Complex%20Analysis.md)
 * [（概率论与）数理统计](概统.md)
-* [知识库](summary.md)
-
-
-
+* [知识库](知识库/summary.md)
 
 
 
