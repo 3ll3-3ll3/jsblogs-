@@ -240,14 +240,14 @@ $$\begin{align*}
  ---
 
 ### 3.13
-#### (1) $|e^z - 1| \le e^{|z|} - 1 \le |z|e^{|z|}$, $\forall z \in \mathbb{C}$.
-#### (2) $(3 - e) |z| < |e^z - 1| < (e - 1) |z|$, $0 < |z| < 1$.
+#### (1) $|e^z - 1| \le e^{|z|} - 1 \le |z|e^{|z|}, \forall z \in \mathbb{C}$.
+#### (2) $(3 - e) |z| < |e^z - 1| < (e - 1) |z|, 0 < |z| < 1$.
 
 ---
 
 
 ### 3.14
-#### $\displaystyle  f(z) = \sum_{n=0}^\infty a_n z^n$ 的收敛半径 $R > 0$, $0 < r < R$, $\displaystyle A(r) = \max_{|z|=r} \text{Re } f(z)$. 证明:
+#### $\displaystyle  f(z) = \sum_{n=0}^\infty a_n z^n$的收敛半径 $R > 0$, $0 < r < R$, $\displaystyle A(r) = \max_{|z|=r} \text{Re } f(z)$. 证明:
 #### (1) $\displaystyle  a_n r^n = \frac{1}{\pi} \int_0^{2\pi} \Re  f(re^{i\theta}) e^{-in\theta} d\theta$, $\forall n \in \mathbb{N}$. 
  **HINT:用 $\displaystyle  a_{k}=\frac{f^{k}(0)}{k!}$  计算即可**
 
