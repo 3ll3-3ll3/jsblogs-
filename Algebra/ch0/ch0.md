@@ -15,8 +15,8 @@
 > 设 $H$ 和 $N$ 为群，$\varphi : H \rightarrow \text{Aut}(N)$ 为群同态；记 $h \in H$ 对 $\varphi$ 的像为 $\varphi_h : N \rightarrow N$。在积集 $N \times H$ 上定义二元运算
 >
 > $$
-> (n, h)(n', h') := (n \varphi_h(n'), hh').
-> $$
+(n, h)(n', h') := (n \varphi_h(n'), hh').
+$$
 >
 > 这给出群结构，称为 $H$ 和 $N$ 相对于 $\varphi$ 的半直积，记为 $N \rtimes_{\varphi} H$。它满足
 >
