@@ -20,14 +20,14 @@ $$
 >
 > 这给出群结构，称为 $H$ 和 $N$ 相对于 $\varphi$ 的半直积，记为 $N \rtimes_{\varphi} H$。它满足
 >
->$$
->1_{N \rtimes H} = (1_N, 1_H), \quad (n, h)^{-1} = (\varphi_{h^{-1}}(n^{-1}), h^{-1}).$$
+> $$
+> 1_{N \rtimes H} = (1_N, 1_H), \quad (n, h)^{-1} = (\varphi_{h^{-1}}(n^{-1}), h^{-1}). $$
 >
 >群 $N$ 和 $H$ 分别通过 $n \mapsto (n, 1_H)$ 和 $h \mapsto (1_N, h)$ 嵌入为 $N \rtimes H$ 的子群。进一步，$N \triangleleft N \rtimes_{\varphi} H$；事实上，
 >
->$$
->(1_N, h)(n, 1_H)(1_N, h)^{-1} = (\varphi_h(n), 1_H).
->$$
+> $$
+> (1_N, h)(n, 1_H)(1_N, h)^{-1} = (\varphi_h(n), 1_H).
+> $$
 >
 >**先说明定义的动机：** 我们的思路是将 $H$ 和 $N$ 嵌入一个更大的群 $G$，使得 $N \triangleleft G$ 而且 $G$ 的所有元素都能唯一地表为 $nh$，其中 $n \in N$ 而 $h \in H$。熟悉的写法
 >
