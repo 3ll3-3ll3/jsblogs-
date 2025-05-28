@@ -8,63 +8,61 @@
 > 2
 > 3
 >
-
+>
 ## 0.0 其他
 
-### 0.0.1 定义-命题 (半直积)
-设 $H$ 和 $N$ 为群，$\varphi : H \rightarrow \text{Aut}(N)$ 为群同态；记 $h \in H$ 对 $\varphi$ 的像为 $\varphi_h : N \rightarrow N$。在积集 $N \times H$ 上定义二元运算
+> ### 0.0.1 定义-命题 (半直积)
+> 设 $H$ 和 $N$ 为群，$\varphi : H \rightarrow \text{Aut}(N)$ 为群同态；记 $h \in H$ 对 $\varphi$ 的像为 $\varphi_h : N \rightarrow N$。在积集 $N \times H$ 上定义二元运算
+>
+> $$
+> (n, h)(n', h') := (n \varphi_h(n'), hh').
+> $$
+>
+> 这给出群结构，称为 $H$ 和 $N$ 相对于 $\varphi$ 的半直积，记为 $N \rtimes_{\varphi} H$。它满足
+>
+>$$
+>1_{N \rtimes H} = (1_N, 1_H), \quad (n, h)^{-1} = (\varphi_{h^{-1}}(n^{-1}), h^{-1}).$$
+>
+>群 $N$ 和 $H$ 分别通过 $n \mapsto (n, 1_H)$ 和 $h \mapsto (1_N, h)$ 嵌入为 $N \rtimes H$ 的子群。进一步，$N \triangleleft N \rtimes_{\varphi} H$；事实上，
+>
+>$$
+>(1_N, h)(n, 1_H)(1_N, h)^{-1} = (\varphi_h(n), 1_H).
+>$$
+>
+>**先说明定义的动机：** 我们的思路是将 $H$ 和 $N$ 嵌入一个更大的群 $G$，使得 $N \triangleleft G$ 而且 $G$ 的所有元素都能唯一地表为 $nh$，其中 $n \in N$ 而 $h \in H$。熟悉的写法
+>
+>$$
+>nh \cdot n'h' = n \underbrace{hn'h^{-1}}_{\in N} hh'
+>$$
+>
+>表明只要能对所有 $h$ 和 $n'$ 描述 $Ad_h(n') = hn'h^{-1}$，则 $G$ 的乘法便唯一从 $N$ 和 $H$ 的乘法确定。定义中的 $\varphi_h$ 正是此处的 $Ad_h \in \text{Aut}(N)$。关于公元和逆元的描述也都可以按此理解。
+>
+>严格论证将反其道而行，从 $N, H$ 和 $\varphi$ 构造这般的群 $G$，而自然的思路是在积集 $N \times H$ 上建群。
+>
+>**严格证明**
+>首先是乘法结合律：
+>
+>$((n,h)(n',h'))(n'',h'') = (n\varphi_h(n'),hh')(n''',h'') = (n\varphi_h(n')\varphi_{hh'}(n'')),hh'h''),$
+>
+>$(n,h)((n',h')(n''',h'')) = (n,h)(n'\varphi_{h'}(n'')),h'h'') = (n\varphi_h(n'\varphi_{h'}(n'')),hh'h'').$
+>
+>问题化为证 $\varphi_h(n')\varphi_{hh'}(n'') = \varphi_h(n'\varphi_{h'}(n''))$；因为 $\varphi_h$ 是同态，目标进一步化为 $\varphi_{hh'} = \varphi_h\varphi_{h'}$，然而 $\varphi: H \rightarrow \text{Aut}(N)$ 也是同>>态，故结合律得证。
+>
+>公元 $(1_N,1_H)$ 的性质容易归结为 $\varphi_{1_H} = \text{id}_N$ 和 $\varphi_h(1_N) = 1_N$。至于逆元的性质，我们有
+>
+>$$\begin{align*}
+>(n,h)(\varphi_{h^{-1}}(n^{-1}),h^{-1}) &= (n\varphi_h(\varphi_{h^{-1}}(n^{-1})),hh^{-1}) \\
+>&= (nn^{-1},hh^{-1}) = (1_N,1_H),\\
+>(\varphi_{h^{-1}}(n^{-1}),h^{-1})(n,h) &= (\varphi_{h^{-1}}(n^{-1})\varphi_{h^{-1}}(n),h^{-1}h) \\
+>&= (\varphi_{h^{-1}}(n^{-1}n),h^{-1}h) = (1_N,1_H).            
+>\end{align*}$$
 
-$$
-(n, h)(n', h') := (n \varphi_h(n'), hh').
-$$
+>最后，嵌入 $H \hookrightarrow   N \rtimes_\varphi H$ 和 $N \hookrightarrow   N \rtimes_\varphi H$ 的同态性质是毫无困难的。按此计算
+>
+>$(1_N,h)(n,1_H)(1_N,h)^{-1} = (\varphi_h(n),h)(1_N,h^{-1}) = (\varphi_h(n),1_H);$
+>此处用到了 $\varphi_h(1_N) = 1_N$。
 
-这给出群结构，称为 $H$ 和 $N$ 相对于 $\varphi$ 的半直积，记为 $N \rtimes_{\varphi} H$。它满足
 
-$$
-1_{N \rtimes H} = (1_N, 1_H), \quad (n, h)^{-1} = (\varphi_{h^{-1}}(n^{-1}), h^{-1}).$$
-
-群 $N$ 和 $H$ 分别通过 $n \mapsto (n, 1_H)$ 和 $h \mapsto (1_N, h)$ 嵌入为 $N \rtimes H$ 的子群。进一步，$N \triangleleft N \rtimes_{\varphi} H$；事实上，
-
-$$
-(1_N, h)(n, 1_H)(1_N, h)^{-1} = (\varphi_h(n), 1_H).
-$$
-
-**先说明定义的动机：** 我们的思路是将 $H$ 和 $N$ 嵌入一个更大的群 $G$，使得 $N \triangleleft G$ 而且 $G$ 的所有元素都能唯一地表为 $nh$，其中 $n \in N$ 而 $h \in H$。熟悉的写法
-
-$$
-nh \cdot n'h' = n \underbrace{hn'h^{-1}}_{\in N} hh'
-$$
-
-表明只要能对所有 $h$ 和 $n'$ 描述 $Ad_h(n') = hn'h^{-1}$，则 $G$ 的乘法便唯一从 $N$ 和 $H$ 的乘法确定。定义中的 $\varphi_h$ 正是此处的 $Ad_h \in \text{Aut}(N)$。关于公元和逆元的描述也都可以按此理解。
-
-严格论证将反其道而行，从 $N, H$ 和 $\varphi$ 构造这般的群 $G$，而自然的思路是在积集 $N \times H$ 上建群。
-
----
-
-**严格证明**
-首先是乘法结合律：
-
-$((n,h)(n',h'))(n'',h'') = (n\varphi_h(n'),hh')(n''',h'') = (n\varphi_h(n')\varphi_{hh'}(n'')),hh'h''),$
-
-$(n,h)((n',h')(n''',h'')) = (n,h)(n'\varphi_{h'}(n'')),h'h'') = (n\varphi_h(n'\varphi_{h'}(n'')),hh'h'').$
-
-问题化为证 $\varphi_h(n')\varphi_{hh'}(n'') = \varphi_h(n'\varphi_{h'}(n''))$；因为 $\varphi_h$ 是同态，目标进一步化为 $\varphi_{hh'} = \varphi_h\varphi_{h'}$，然而 $\varphi: H \rightarrow \text{Aut}(N)$ 也是同态，故结合律得证。
-
-公元 $(1_N,1_H)$ 的性质容易归结为 $\varphi_{1_H} = \text{id}_N$ 和 $\varphi_h(1_N) = 1_N$。至于逆元的性质，我们有
-
-$$\begin{align*}
-(n,h)(\varphi_{h^{-1}}(n^{-1}),h^{-1}) &= (n\varphi_h(\varphi_{h^{-1}}(n^{-1})),hh^{-1}) \\
-&= (nn^{-1},hh^{-1}) = (1_N,1_H),\\
-(\varphi_{h^{-1}}(n^{-1}),h^{-1})(n,h) &= (\varphi_{h^{-1}}(n^{-1})\varphi_{h^{-1}}(n),h^{-1}h) \\
-&= (\varphi_{h^{-1}}(n^{-1}n),h^{-1}h) = (1_N,1_H).            
-\end{align*}$$
-
-最后，嵌入 $H \hookrightarrow   N \rtimes_\varphi H$ 和 $N \hookrightarrow   N \rtimes_\varphi H$ 的同态性质是毫无困难的。按此计算
-
-$(1_N,h)(n,1_H)(1_N,h)^{-1} = (\varphi_h(n),h)(1_N,h^{-1}) = (\varphi_h(n),1_H);$
-此处用到了 $\varphi_h(1_N) = 1_N$。
-
----
 
 **注：**
 如果取 $\varphi : H \rightarrow \text{Aut}(N)$ 为平凡同态，亦即 $\forall h, \varphi_h = \text{id}_N$，则 $N \rtimes H$ 便化为直积 $N \times H$。
